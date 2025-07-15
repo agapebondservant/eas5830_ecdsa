@@ -8,7 +8,7 @@ def sign(m):
 
     # TODO create an account for signing the message
     account_object = w3.eth.account.create()  # Create an Eth account
-    public_key = account_object.public_key  # Eth account public key
+    public_key = account_object.pub_key  # Eth account public key
     private_key = account_object.key  # Eth account private key
 
     # from web3 import Web3; w3 = Web3(); acc = w3.eth.account.create(); print(f'private key={w3.to_hex(acc.key)}, account={acc.address}')"
